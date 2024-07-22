@@ -4,11 +4,9 @@ import '../Style/Cabins.css';
 
 function Cabins() {
   const cabins = [
-    { id: 1, name: 'Cabaña 1', description: 'Descripción de la cabaña 1', image: 'https://via.placeholder.com/300', price: 100 },
-    { id: 2, name: 'Cabaña 2', description: 'Descripción de la cabaña 2', image: 'https://via.placeholder.com/300', price: 150 },
-    { id: 2, name: 'Cabaña 2', description: 'Descripción de la cabaña 2', image: 'https://via.placeholder.com/300', price: 150 },
-
-    // Agrega más cabañas según sea necesario
+    { id: 1, name: 'Cabaña 1', description: 'Descripción de la cabaña 1', image: 'https://via.placeholder.com/300', price: "30.000" },
+    { id: 2, name: 'Cabaña 2', description: 'Descripción de la cabaña 2', image: 'https://via.placeholder.com/300', price: "30.000" },
+    { id: 2, name: 'Quincho', description: 'Descripción de la cabaña 2', image: 'https://via.placeholder.com/300', price: "30.000" },
   ];
 
   return (
