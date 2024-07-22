@@ -11,7 +11,7 @@ function Header() {
           <Link to="/">Inicio</Link>
           <Link to="/about">Sobre Nosotros</Link>
           <Link to="/cabins">Cabañas</Link>
-          <a href="/contacto">Contacto</a>
+          <a href="/contact">Contacto</a>
         </nav>
       </div>
     </header>
