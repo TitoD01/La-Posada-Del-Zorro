@@ -1,21 +1,53 @@
+/* src/Style/CabinCard.css */
 .cabin-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .cabin-card img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .cabin-card h3 {
-    margin: 10px 0;
-  }
-  
-  .cabin-card p {
-    margin: 5px 0;
-  }
-  
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.cabin-card:hover {
+  transform: scale(1.02);
+}
+
+.cabin-image {
+  width: 100%;
+  height: auto;
+}
+
+.cabin-info {
+  padding: 16px;
+}
+
+.cabin-name {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.cabin-description {
+  font-size: 1em;
+  margin: 8px 0;
+}
+
+.cabin-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.cabin-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #ff5a5f;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cabin-button:hover {
+  background-color: #ff787d;
+}

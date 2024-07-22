@@ -9,6 +9,9 @@ function CabinCard({ cabin }) {
         <h3 className="cabin-name">{cabin.name}</h3>
         <p className="cabin-description">{cabin.description}</p>
         <p className="cabin-price">Precio: ${cabin.price}</p>
+        <a href={cabin.airbnbLink} target="_blank" rel="noopener noreferrer" className="cabin-button">
+          Ver más
+        </a>
       </div>
     </div>
   );
