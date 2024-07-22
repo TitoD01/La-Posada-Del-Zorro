@@ -1,0 +1,30 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenedor principal cubra al menos la altura completa de la ventana */
+}
+
+.main-content {
+  flex: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+}
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .carousel-image {
+    max-height: 300px; /* Ajusta la altura máxima para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-image {
+    max-height: 200px; /* Ajusta aún más la altura máxima para dispositivos móviles */
+  }
+}

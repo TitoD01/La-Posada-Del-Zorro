@@ -1,0 +1,16 @@
+.cabins {
+  padding: 20px;
+}
+
+.cabin-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cabin-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}

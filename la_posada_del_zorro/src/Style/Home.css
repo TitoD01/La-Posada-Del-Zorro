@@ -1,0 +1,30 @@
+.home {
+  padding: 20px;
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+.cabin-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cabin-card {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .cabin-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .cabin-card {
+    flex: 1 1 100%;
+  }
+}
