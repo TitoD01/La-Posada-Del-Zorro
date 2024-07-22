@@ -1,19 +1,24 @@
 import React from 'react';
-import '../Style/FlippCard.css'; // Importa el CSS para el efecto de volteo
+import '../Style/CabinCard.css'; // Asegúrate de que la ruta sea correcta
 
-function FlippCard({ image, name, description, price }) {
+function FlippCard({ cabin }) { // Cambia 'card' a 'cabin' para coincidir con el nombre en `CardGallery`
   return (
-    <div className="flippable-card">
-      <div className="flippable-card-inner">
-        <div className="flippable-card-front">
-          <img src={image} alt={name} className="flippable-card-image" />
-          <div className="flippable-card-content">
-            <h3 className="flippable-card-title">{name}</h3>
-            <p className="flippable-card-price">Precio: ${price}</p>
-          </div>
+    <div className="cabin-card">
+      <div className="cabin-card-inner">
+        {/* Parte frontal de la tarjeta */}
+        <div className="cabin-card-front">
+          <img src={cabin.image} alt={cabin.name} className="cabin-image" />
         </div>
-        <div className="flippable-card-back">
-          <p>{description}</p>
+        {/* Parte trasera de la tarjeta */}
+        <div className="cabin-card-back">
+          <div className="cabin-info">
+            <h3 className="cabin-name">{cabin.name}</h3>
+            <p className="cabin-description">{cabin.description}</p>
+            <p className="cabin-price">Precio: {cabin.price}</p>
+            <a href={cabin.airbnbLink} target="_blank" rel="noopener noreferrer" className="cabin-button">
+              Ver en Airbnb
+            </a>
+          </div>
         </div>
       </div>
     </div>
