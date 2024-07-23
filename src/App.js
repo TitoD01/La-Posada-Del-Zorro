@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Cabins from './components/Cabins';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 import WhatsappButton from './components/WhatsappButton';
 import './App.css';
 
@@ -18,6 +19,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/cabins" element={<Cabins />} />
+            <Route path="/Contact" element={<Contact/>} />
+
           </Routes>
         </div>
         <Footer />

@@ -1,9 +1,9 @@
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: #614d46; /* Fondo verde */
+  color: #ffffff; /* Letras negras */
   padding: 20px;
   text-align: center;
-  border-top: 1px solid #444;
+  border-top: 1px solid#614d46;
   position: relative;
   margin-top: 20px;
 }
@@ -22,12 +22,12 @@
 .footer p,
 .footer a {
   margin: 5px 0;
-  color: #bbb;
+  color: #ffffff; /* Letras negras */
   text-decoration: none;
 }
 
 .footer a:hover {
-  color: #fff;
+  color: #614d46;
 }
 
 .footer .contact-info {
@@ -46,13 +46,13 @@
 
 .footer .social-media a {
   margin: 0 10px;
-  color: #bbb;
+  color: #ffffff; /* Letras negras */
   font-size: 1.5em;
   text-decoration: none;
 }
 
 .footer .social-media a:hover {
-  color: #fff;
+  color: #614d46;
 }
 
 @media (max-width: 768px) {
@@ -64,5 +64,3 @@
     font-size: 1.2em;
   }
 }
-
-

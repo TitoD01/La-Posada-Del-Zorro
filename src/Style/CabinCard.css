@@ -1,47 +1,48 @@
-/* src/Style/CabinCard.css */
 .cabin-card {
-  border: 1px solid #ddd;
+  width: 250px; /* Define un ancho específico */
+  border: 1px solid #fdf4f4;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #fdf2ee;
   transition: transform 0.2s;
 }
 
 .cabin-card:hover {
-  transform: scale(1.02);
+  transform: scale(0.96);
 }
 
 .cabin-image {
-  width: 100%;
-  height: auto;
+  width: 75%;
+  height: 259px; /* Ajusta la altura de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
 }
 
 .cabin-info {
-  padding: 16px;
+  padding: 20px; /* Reduce el padding */
 }
 
 .cabin-name {
-  font-size: 1.5em;
+  font-size: 1.2em; /* Reduce el tamaño de la fuente */
   margin: 0;
 }
 
 .cabin-description {
-  font-size: 1em;
-  margin: 8px 0;
+  font-size: 0.9em; /* Reduce el tamaño de la fuente */
+  margin: 6px 0;
 }
 
 .cabin-price {
-  font-size: 1.2em;
+  font-size: 1em; /* Reduce el tamaño de la fuente */
   font-weight: bold;
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
 .cabin-button {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 1em;
-  color: white;
-  background-color: #ff5a5f;
+  padding: 8px 16px; /* Reduce el padding */
+  font-size: 0.9em; /* Reduce el tamaño de la fuente */
+  color: rgb(245, 244, 244);
+  background-color:#614d46;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -49,5 +50,5 @@
 }
 
 .cabin-button:hover {
-  background-color: #ff787d;
+  background-color: #614d46;
 }

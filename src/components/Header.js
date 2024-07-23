@@ -6,12 +6,12 @@ function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <h1>La Posada del Zorro</h1>
+        <h1 className='titulo'>La Posada del Zorro</h1>
         <nav className="nav">
           <Link to="/">Inicio</Link>
           <Link to="/about">Sobre Nosotros</Link>
           <Link to="/cabins">Cabañas</Link>
-          <a href="/contact">Contacto</a>
+          <Link to="/Contact">Contact</Link>
         </nav>
       </div>
     </header>
