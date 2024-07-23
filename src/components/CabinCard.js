@@ -1,5 +1,6 @@
 import React from 'react';
-import '../Style/CabinCard.css'; // Asegúrate de tener el archivo CSS para los estilos
+import { Link } from 'react-router-dom';
+import '../Style/CabinCard.css';
 
 function CabinCard({ cabin }) {
   return (
@@ -9,9 +10,9 @@ function CabinCard({ cabin }) {
         <h3 className="cabin-name">{cabin.name}</h3>
         <p className="cabin-description">{cabin.description}</p>
         <p className="cabin-price">Precio: ${cabin.price}</p>
-        <a href={cabin.airbnbLink} target="_blank" rel="noopener noreferrer" className="cabin-button">
+        <Link to={`/info/${cabin.id}`} className="cabin-button">
           Ver más
-        </a>
+        </Link>
       </div>
     </div>
   );

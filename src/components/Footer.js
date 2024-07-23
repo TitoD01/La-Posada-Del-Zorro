@@ -1,9 +1,9 @@
 import React from 'react';
 import '../Style/Footer.css';
 
-function Footer() {
+function Footer({ isInfoCabOpen }) {
   return (
-    <footer className="footer" id="contact">
+    <footer className={`footer ${isInfoCabOpen ? 'overlay' : ''}`} id="contact">
       <div className="footer-content">
         <h2>La Posada del Zorro</h2>
         <div className="contact-info">

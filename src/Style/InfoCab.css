@@ -1,0 +1,69 @@
+.info-cab {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+.info-cab-container {
+  background-color: #fff;
+  padding: 40px; /* Aumenta el espacio interno */
+  border-radius: 8px;
+  width: 80%; /* Aumenta el ancho de la tarjeta */
+  max-width: 1000px; /* Aumenta el ancho máximo de la tarjeta */
+  position: relative;
+  overflow-y: auto; /* Permite scroll vertical si el contenido es muy largo */
+}
+
+.close-button {
+  position: absolute;
+  top:0px; /* Ajusta la posición del botón de cierre */
+  right: 0px; /* Ajusta la posición del botón de cierre */
+  background: none;
+  border: none;
+  font-size: 2rem; /* Aumenta el tamaño del botón de cierre */
+  cursor: pointer;
+  color: #5f5959;
+}
+
+.info-cab-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* Aumenta la altura máxima de la imagen */
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .info-cab-container {
+    width: 90%; /* Ajusta el ancho en pantallas medianas */
+    padding: 20px; /* Ajusta el padding en pantallas medianas */
+  }
+
+  .info-cab-image {
+    max-height: 350px; /* Ajusta la altura máxima de la imagen en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .info-cab-container {
+    width: 95%; /* Ajusta el ancho en pantallas pequeñas */
+    padding: 15px; /* Ajusta el padding en pantallas pequeñas */
+  }
+
+  .close-button {
+    font-size: 1.5rem; /* Ajusta el tamaño del botón de cierre en pantallas pequeñas */
+    top: 10px; /* Ajusta la posición del botón de cierre */
+    right: 10px; /* Ajusta la posición del botón de cierre */
+    
+  }
+
+  .info-cab-image {
+    max-height: 300px; /* Ajusta la altura máxima de la imagen en pantallas pequeñas */
+  }
+}
