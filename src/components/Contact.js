@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import '../Style/Contact.css';
+import emailjs from 'emailjs-com'; // Asegúrate de instalar emailjs-com
 
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '', // Agregado
     message: ''
   });
 
@@ -18,8 +20,21 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes manejar el envío del formulario, como enviar los datos a un servidor
-    console.log('Form data submitted:', formData);
+    // Configura EmailJS
+    emailjs.send('laposada', 'template_e6nwgma', formData, '_A8Nl1-ttqUn1gNYd')//falta la configuracion de un correo especial 
+      .then((response) => {
+        console.log('Mensaje enviado correctamente', response);
+      }, (error) => {
+        console.error('Error al enviar mensaje', error);
+      });
+
+    // Limpia el formulario
+    setFormData({
+      name: '',
+      email: '',
+      phone: '', // Limpia el campo de teléfono
+      message: ''
+    });
   };
 
   return (
@@ -49,6 +64,17 @@ function Contact() {
           />
         </div>
         <div className="form-group">
+          <label htmlFor="phone">Número de Teléfono:</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
           <label htmlFor="message">Mensaje:</label>
           <textarea
             id="message"
@@ -63,4 +89,5 @@ function Contact() {
     </div>
   );
 }
+
 export default Contact;
